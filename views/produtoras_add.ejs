@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Editar Produtoras</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <% if (resultado.id_produtora) {%>
+    <%} else {%> 
+    <h1>Incluir Filmes</h1>
+    <!-- Formulário para Incluir Autores -->
+    <form class="row g-3">
+      <div class="col-md-6">
+        <label for="inputnome" class="form-label">Nome</label>
+        <input type="text" class="form-control" id="inputnome" placeholder="Nome">
+      </div>
+
+      <div class="col-md-6">
+        <label for="inputprodutora" class="form-label">Produtora</label>
+        <select id="inputprodutora" class="form-select">
+          <option selected>(Informe)</option>
+        </select>
+      </div>
+
+      <div class="col-md-6">
+        <label for="inputhoras_totais" class="form-label">Horas Totais</label>
+        <input type="number" class="form-control" id="inputhoras_totais" placeholder="Horas Totais">
+      </div>
+
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary">Cadastrar</button>
+      </div>
+    </form>
+
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
+    </script>
+</html>
